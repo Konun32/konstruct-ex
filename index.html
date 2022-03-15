@@ -9,10 +9,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/icons.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="page-home home">
+		<div class="page-home home" id="section-1">
 			<div class="home__container _container">
 				<div class="home__body">
 					<div class="home__logo">
@@ -42,18 +43,18 @@
 					</div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a data-goto=".page-home" href="#" class="menu__link scroll">HOME</a></li>
-							<li class="menu__item"><a data-goto=".page__about" href="#" class="menu__link scroll">ABOUT</a></li>
-							<li class="menu__item"><a data-goto=".page__services" href="#" class="menu__link scroll">SERVICES</a></li>
-							<li class="menu__item"><a data-goto=".page__work" href="#" class="menu__link scroll">WORK</a></li>
-							<li class="menu__item"><a data-goto=".page__contact" href="#" class="menu__link scroll">CONTACT</a></li>
+							<li class="menu__item"><a data-goto=".page-home" href="#section-1" class="menu__link scroll">HOME</a></li>
+							<li class="menu__item"><a data-goto=".page__about" href="#section-2" class="menu__link scroll">ABOUT</a></li>
+							<li class="menu__item"><a data-goto=".page__services" href="#section-3" class="menu__link scroll">SERVICES</a></li>
+							<li class="menu__item"><a data-goto=".page__work" href="#section-4" class="menu__link scroll">WORK</a></li>
+							<li class="menu__item"><a data-goto=".page__contact" href="#section-5" class="menu__link scroll">CONTACT</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__about about">
+			<section class="page__about about" id="section-2">
 				<div class="about__container _container">
 					<div class="about__body">
 						<div class="about__title title">
@@ -95,7 +96,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__services services">
+			<section class="page__services services" id="section-3">
 				<div class="services__container _container">
 					<div class="services__body">
 						<div class="services__top">
@@ -140,7 +141,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__work work">
+			<section class="page__work work" id="section-4">
 				<div class="work__container _container">
 					<div class="work__body">
 						<h2 class="work__title">Want to build<br>something amazing?</h2>
@@ -151,7 +152,7 @@
 					<img src="img/work/bg.png" alt="bg">
 				</div>
 			</section>
-			<section class="page__contact contact">
+			<section class="page__contact contact" id="section-5">
 				<div class="contact__container _container">
 					<div class="contact__body">
 						<div class="contact__text">Newsletter Signup</div>
