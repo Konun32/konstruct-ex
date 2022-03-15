@@ -12,7 +12,23 @@ function stickMenu() {
 }
 
 //подсветка меню
-
+let sections = $('section'), 
+nav = $('nav'), 
+nav_height = nav.outerHeight();
+$(window).on('scroll', function () {
+    $('nav a').removeClass('_activated');
+    let cur_pos = $(this).scrollTop(); 
+    sections.each(function() {
+        let top = $(this).offset().top - nav_height - 180,
+        bottom = top + $(this).outerHeight();       
+        if (cur_pos >= top && cur_pos <= bottom) {
+            nav.find('a').removeClass('_activated');
+            sections.removeClass('_activated');    
+            $(this).addClass('_activated');
+            nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('_activated');
+        }
+    });
+});
 
 //прокрутка при клике
 const menuLinks = document.querySelectorAll('.scroll[data-goto]');
